@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Jogadores</title>
+<link rel="stylesheet" href="./Assets/CSS/estilo.css">
+<link rel="icon" href="../Assets/img/logo.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../Assets/img/logo.ico" type="image/x-icon" />
+
+<body>
+
+    <header class="page-header">
+        <img src="../Assets/img/logo-liga.png" alt="Logo A.A Centenário" class="logo">
+        <h1>Cadastro de Jogadores do time Cruzeiro do Sul</h1>
+    </header>
+
+<div id="formulario">
+<table>
+    <thead>
+        <tr>
+            <th>Numero da Camisa</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>RG</th>
+            <th>Posição</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyForm"></tbody>
+</table>
+
+<div class="actions">
+    <button onclick="gerarTabela()">Gerar Tabela</button>
+</div>
+</div>
+
+<div id="tabelaFinal" class="hidden">
+    <div id="conteudoTabela"></div>
+
+    <div class="actions">
+        <button onclick="voltar()">Voltar</button>
+        <button onclick="enviarWhatsapp()">Enviar para WhatsApp</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+      <a href="https://feliperodrigues.net"><img src="./Assets/img/banner04.png" alt="Logo do Felipe"></a>
+      <p>© <span id="currentYear">2025</span> Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+<script src="Assets/JS/script.js"></script>
+
+
+
+</body>
+</html>
